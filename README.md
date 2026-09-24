@@ -1,11 +1,10 @@
-# 🎓 Universidad José | Sistema de Gestión Escolar
+# 🎓 Universidad José | Sistema de Gestión
 
-por definir
+Universidad José es una apliación web desarrollada en Django orientada a la gestión de docentes y alumnos.
 
 ## Características principales
 
-- 👨‍🎓 **Gestión de estudiantes:** Registro y administración de información estudiantil.
-- 🏫 **Administración escolar:** Organización de datos académicos y administrativos.
+- 👨‍🎓 **Gestión de estudiantes y docentes:** Registro y administración de información academica.
 - 🗄️ **Persistencia de datos:** Almacenamiento seguro mediante MariaDB/MySQL.
 - 🌐 **Aplicación web Django:** Arquitectura basada en el patrón MVT (Model-View-Template).
 
@@ -112,7 +111,7 @@ git clone https://github.com/Dragon7Night/UniversidadJose.git
 ## 3. Acceder a la carpeta del proyecto
 
 ```bash
-cd escuelaChuckyCristianYJose
+cd proyectoUniversidadJose
 ```
 
 **Nota:** Si no deseas trabajar con un entorno virtual, puedes avanzar directamente al paso 6.
@@ -166,11 +165,7 @@ py manage.py makemigrations
 Migraciónes por aplicaciónes (en caso de error con la migraciones):
 
 ```bash
-py manage.py makemigrations gestorCursos
-```
-
-```bash
-py manage.py makemigrations gestorUser
+py manage.py makemigrations djangoUniJose
 ```
 
 Aplicar migraciones-

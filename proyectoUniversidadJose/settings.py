@@ -78,12 +78,23 @@ WSGI_APPLICATION = 'proyectoUniversidadJose.wsgi.application'
 import pymysql
 pymysql.install_as_MySQLdb()
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'UniDBJose',
+#         'USER':'root',
+#         'PASSWORD':''
+#     }
+# }
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'UniDBJose',
-        'USER':'root',
-        'PASSWORD':''
+        'NAME': 'unijose',
+        'USER': 'django_db',
+        'PASSWORD': 'django_pass',
+        'HOST': '127.0.0.1',
+        'PORT': '3306'
     }
 }
 
