@@ -55,13 +55,13 @@ Antes de ejecutar la aplicación, es necesario crear una base de datos y un usua
 Ejemplo:
 
 ```sql
-CREATE DATABASE db_django;
+CREATE DATABASE unijose;
 
 CREATE USER 'django_db'@'localhost'
 IDENTIFIED BY 'django_pass';
 
 GRANT ALL PRIVILEGES
-ON db_django.*
+ON unijose.*
 TO 'django_db'@'localhost';
 
 FLUSH PRIVILEGES;
@@ -75,7 +75,7 @@ Ejemplo:
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql', # motor de DB usado
-        'NAME': 'db_django', # nombre de la DB
+        'NAME': 'unijose', # nombre de la DB
         'USER': 'django_db', # nombre del usuario
         'PASSWORD': 'django_pass', # contraseña del usuario
         'HOST': '127.0.0.1', # direccion del host
